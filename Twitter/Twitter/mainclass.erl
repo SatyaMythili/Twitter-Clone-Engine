@@ -10,7 +10,7 @@ startTheRegistration()->
         (SignIn=="S")->
             register:signInUser();
         true->
-            register:registerUser()  
+            register:registerUser()   
     end.
 signInBuffer()->
     receive
