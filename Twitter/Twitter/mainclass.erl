@@ -10,7 +10,7 @@ startTheRegistration()->
         (SignIn=="S")->
             register:signInUser();
         true->
-            register:registerUser()
+            register:registerUser() 
     end.
 signInBuffer()->
     receive
@@ -26,7 +26,7 @@ signInBuffer()->
                 UserName==querying ->
                     hashTagMap!{Tweet,self(),Pid}; 
                 UserName==queryingSubscribedTweets->
-                    % Tweet is UserName
+                    % UserName is Tweet
                     subscribeToUser!{Tweet,self(),Pid,tweet}; 
                 true ->
                  receiveTweet !{UserName,Tweet,self(),Pid} 
