@@ -6,7 +6,7 @@ sendTweetToAllSubscribers/4,myMentions/0,queryHashTag/1,printTweets/2,getSubscri
 sendTweetToServer(Tweet)->
     try persistent_term:get("SignedIn")
     catch 
-    error:X ->
+    error:X -> 
         io:format("~p~n",[X])
     end,  
     SignedIn=persistent_term:get("SignedIn"),
