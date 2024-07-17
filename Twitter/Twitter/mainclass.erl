@@ -59,7 +59,7 @@ startTwitter()->
     Map2 = maps:from_list(List2),
     Map3= maps:from_list(List3),
     Map4=maps:from_list(List4),
-    Map6=maps:from_list(List4),
+    Map6=maps:from_list(List4), 
     Map5=maps:from_list(List5),
     register(userregister,spawn(list_to_atom("centralserver@Mythili-HP"),register,recieveMessage,[Map1])),
     register(receiveTweet,spawn(list_to_atom("centralserver@Mythili-HP"),sendreceive,getTweetFromUser,[Map2])),
