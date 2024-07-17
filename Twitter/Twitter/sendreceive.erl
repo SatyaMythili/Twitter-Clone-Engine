@@ -54,7 +54,7 @@ getTweetFromUser(UserTweetMap)->
          {UserName}->
             NewUserTweetMap=maps:put(UserName,[],UserTweetMap),
             getTweetFromUser(NewUserTweetMap);
-         {UserName1,Pid}->
+         {UserName1,Pid}-> 
             {UserName}=UserName1,
             ListTweets=maps:find(UserName,UserTweetMap),
             io:format("UserName=~p~n",[UserTweetMap]),
